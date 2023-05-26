@@ -1,0 +1,24 @@
+{
+  "name": "microsvc-produits",
+  "version": "1.0.0",
+  "description": "le microservice produits de l'application mcommerce en nodejs",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run clientui\""
+  },
+  "author": "OUBELKAS FATIMA",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.0.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
